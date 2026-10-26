@@ -1,0 +1,607 @@
+/*===========   header styles  ===========*/
+.main-header {
+
+    margin: 0 auto;
+    padding: 20px 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    background: #282c33;
+    width: 100%;
+    height: 100px;
+    z-index: 99;
+}
+
+.main-header .logo-wrapper {
+    display: flex;
+    gap: 6px;
+
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px 0px 10px 0;
+    background: #565d6a;
+    box-shadow: -1px -1px 10px 1px rgb(12, 12, 130);
+
+}
+
+/*== navigation list */
+.main-header .nav-list {
+    display: flex;
+    gap: 16px;
+
+}
+
+
+.main-header .nav-list .nav-link {
+
+    padding: 0 0.7rem;
+    color: #abb2bf;
+}
+
+.main-header .nav-list .nav-link .sharp-sign {
+    color: palevioletred;
+}
+
+.main-header .nav-list .nav-link.active {
+    color: rgb(238, 240, 238);
+    transition: all 0.3s ease;
+    padding: 10px;
+
+}
+
+/*-------  baccer styles  -------*/
+
+.cotainer {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    gap: 2rem;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 100dvh;
+    padding-top: 4.5rem;
+
+
+}
+
+
+
+.cotainer .left .banner-title {
+    font-size: 2.4rem;
+
+}
+
+.cotainer .left .banner-title .banner-title-hilight {
+    color: purple;
+
+}
+
+
+
+.cotainer .left .banner-text {
+    margin: 2rem 0;
+    color: #abb2bf;
+    font-size: 1.2rem;
+}
+
+.cotainer .left .banner-link {
+    border: 3px solid purple;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.048);
+    color: aliceblue;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.cotainer .left .banner-link:hover {
+    background: rgba(216, 112, 147, 20%);
+}
+
+/*-------------   right    ----------*/
+.cotainer .right {}
+
+.cotainer .right .iamge {
+    width: 80%;
+    position: relative;
+
+
+}
+
+.cotainer .right .banner-occupation {
+    padding: 5px 30px;
+    text-align: center;
+    top: -20px;
+    background: transparent;
+    border: 1px solid #abb2bf;
+}
+
+.cotainer .right .banner-title-hilight {
+    color: purple;
+}
+
+
+/*-----------  slogan section  -------------*/
+
+.slogan-container {
+    text-align: center;
+}
+
+.slogan-container .slogan-box {
+    border: 1px solid white;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    top: 10px;
+}
+
+.slogan-container .slogan-box .quote-left {
+    font-size: 40px;
+    font-weight: bold;
+    background: #282c33;
+    position: absolute;
+    top: -20px;
+    right: 450px;
+
+
+}
+
+.slogan-container .slogan-box .quote-right {
+    font-size: 40px;
+    font-weight: bold;
+    top: 65px;
+    background: #282c33;
+    position: absolute;
+    left: 450px;
+}
+
+
+.sayed {
+    padding: 30px;
+    position: relative;
+
+}
+
+/*-------------  projecte section------------*/
+.project-container {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 7rem;
+    margin-top: 7rem;
+    position: relative;
+}
+
+.project-container .project-title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.project-container .project-title-box .project-title {
+    display: flex;
+    font-size: 2rem;
+    font-weight: 400;
+    position: relative;
+}
+
+.project-container .project-title-box .project-title .title-hilight {
+    color: rgb(151, 44, 151);
+}
+
+/*------ purple line ------*/
+.project-container .project-title-box .project-title::after {
+    content: "";
+    width: 400px;
+    height: 1px;
+    background: rgb(153, 27, 153);
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 108%;
+}
+
+.project-container .project-title-box .project-view-all {
+    transition: color 0.4s ease;
+}
+
+.project-container .project-title-box .project-view-all:hover {
+    color: rgb(141, 63, 141);
+}
+
+.project-container .projects-list {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.project-container .projects-list .projecte-card {
+    border: 1px solid rgb(132, 64, 132);
+}
+
+.project-container .projects-list .projecte-card .project-technologies {
+    border-block: 1px solid rgb(95, 75, 75);
+
+
+    color: rgb(136, 132, 129);
+    padding: 0.5rem;
+}
+
+.projects-list .projecte-card .projecte-img-width {
+    width: 350px;
+    height: 200px;
+    display: block;
+    aspect-ratio: 16/0;
+    object-fit: cover;
+}
+
+.project-container .projects-list .project-info-box {
+    padding: 1rem;
+}
+
+.projects-list .project-info-box .project-text {
+    margin: 1rem 0;
+    color: #abb2bf;
+}
+
+.project-list .project-action {
+    display: flex;
+    gap: 1rem;
+}
+
+.projects-list .project-action .project-link {
+    border: 1px solid rgb(147, 141, 141);
+    padding: 0.3rem 1rem;
+    color: #abb2bf;
+    transition: all 0.4s ease;
+}
+
+.projects-list .project-action .project-live {
+    border-color: plum;
+    color: white;
+}
+
+.projects-list .project-action .project-live:hover {
+    background: #565d6a;
+}
+
+.projects-list .project-action .project-link:hover {
+    background: rgba(158, 166, 181, 0.253);
+}
+
+
+
+/*========= skills style ==========*/
+.skills-container .project-title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.skills-container .project-title-box .project-title {
+    display: flex;
+    font-size: 2rem;
+    font-weight: 400;
+    position: relative;
+}
+
+.skills-container .project-title-box .project-title .title-hilight {
+    color: rgb(151, 44, 151);
+}
+
+/*------ purple line ------*/
+.skills-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.skills-container .project-title-box .project-title::after {
+    content: "";
+    width: 300px;
+    height: 1px;
+    background: rgb(153, 27, 153);
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 108%;
+}
+
+.skills-list-wrapper {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.skills-list-wrapper .skills-colume {
+    width: 100%;
+
+}
+
+.skills-list-wrapper .skills-colume .skills-box {
+    border: 1px solid rgb(111, 111, 121);
+    margin-bottom: 2rem;
+
+
+}
+
+.skills-list-wrapper .skills-colume .skills-box .box-header {
+    border-bottom: 1px solid rgb(109, 109, 116);
+    padding: 20px;
+
+}
+
+.skills-list-wrapper .skills-colume .skills-box .box-content {
+    color: rgb(141, 147, 147);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 0.5rem;
+}
+
+/*------------- about-me style ----------*/
+.about-contianer .title {
+    display: flex;
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+.about-contianer .title .hilight {
+    color: rgb(151, 44, 151);
+
+}
+
+.about-contianer {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.titles {
+
+    font-size: 30px;
+}
+
+.hilights {
+    margin-top: 10px;
+
+    color: purple;
+    position: relative;
+}
+
+.hilights::after {
+    content: "";
+    position: absolute;
+    background: purple;
+    width: 300px;
+    height: 1px;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 180px;
+
+}
+
+.about-contianer .about-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.about-contianer .about-wrapper .about-section {
+    width: 50%;
+}
+
+.about-contianer .about-wrapper .left {}
+
+.about-contianer .about-wrapper .left .about-description {
+    color: #797b7f;
+    margin: 1.5rem;
+}
+
+.about-contianer .about-wrapper .left .about-btn {
+    border: 1px solid rgb(255, 0, 255);
+    padding: 8px 12px;
+    margin-top: 2rem;
+    display: inline-block;
+    margin-left: 20px;
+    transition: all 0.4s ease;
+
+    &:hover {
+        background: rgba(194, 121, 208, 0.386);
+    }
+}
+
+
+.about-contianer .about-wrapper .right {
+    text-align: right;
+    margin-top: -65px;
+}
+
+.about-contianer .about-wrapper .right .imgsw {
+    border-bottom: 1px solid rgb(177, 177, 177);
+    width: 400px;
+    margin-top: -70px;
+
+}
+
+.abc {
+    background: rgb(233, 234, 234);
+    width: 3px;
+    height: 3px;
+    border-radius: 100px;
+    margin-top: -300px;
+    margin-left: 189px;
+    font-weight: 100;
+
+    box-shadow: 0px 15px 0px 0px rgb(243, 244, 244), 0px 30px 0px 0px rgb(246, 248, 248), 0px 45px 0px 0px rgb(252, 255, 255), 0px 60px 0px 0px rgb(243, 245, 245), 20px 15px 0px 0px rgb(243, 244, 244), 20px 30px 0px 0px rgb(246, 248, 248), 20px 45px 0px 0px rgb(252, 255, 255), 20px 60px 0px 0px rgb(243, 245, 245), 20px 0px 0px 0px #f8f4f4, 40px 15px 0px 0px rgb(243, 244, 244), 40px 30px 0px 0px rgb(246, 248, 248), 40px 45px 0px 0px rgb(252, 255, 255), 40px 60px 0px 0px rgb(243, 245, 245), 40px 0px 0px 0px #f8f4f4, 60px 15px 0px 0px rgb(243, 244, 244), 60px 30px 0px 0px rgb(246, 248, 248), 60px 45px 0px 0px rgb(252, 255, 255), 60px 60px 0px 0px rgb(243, 245, 245), 60px 0px 0px 0px #f8f4f4, 80px 15px 0px 0px rgb(243, 244, 244), 80px 30px 0px 0px rgb(246, 248, 248), 80px 45px 0px 0px rgb(252, 255, 255), 80px 60px 0px 0px rgb(243, 245, 245), 80px 0px 0px 0px #f8f4f4;
+}
+
+/*==========  contact me=========*/
+
+.contact-contact {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 120px;
+    position: relative;
+}
+
+.project-title {
+
+    font-size: 30px;
+}
+
+.title3 {
+    margin-top: 30px;
+
+    color: purple;
+    position: relative;
+}
+
+.title3::after {
+    content: "";
+    position: absolute;
+    background: purple;
+    width: 300px;
+    height: 1px;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 180px;
+
+}
+
+.contact-rapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-rapper .contact-cincat {
+    width: 50%;
+}
+
+.left-section {}
+
+.contact-description {
+    color: #abb2bf;
+    margin-bottom: 2rem;
+}
+
+.right-foder {
+    text-align: right;
+    align-self: center;
+}
+
+.fod-titler5 {
+    margin-bottom: 1rem;
+
+}
+
+.messige-box {
+
+    border: 1px solid #8d9094;
+    display: inline-block;
+    padding: 1rem;
+    text-align: left;
+}
+
+.contact-cincat .contact-rapper .right .messige-box .messige-here {}
+
+.social-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.social-link {
+    color: #abb2bf;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    color: aliceblue;
+}
+
+.min-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1.7rem;
+}
+
+.logo-wrapper {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 1rem;
+    margin-top: 5px;
+}
+
+.footer-p {}
+
+.copy {
+    color: #8d9094;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.social-container {
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    left: 30px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    width: 2px;
+    height: 200px;
+    margin-bottom: 1.5rem;
+    background: #6d6666;
+}
+
+.social-container .social-line .social-list {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.social-link {
+    color: #f8f4f4;
+    width: 30px;
+    transition: all 0.3s ease;
+}
+
+/*-----  project shape-------*/
+.you {
+    background: rgb(233, 234, 234);
+    width: 3px;
+    height: 3px;
+    border-radius: 100px;
+
+    left: -27%;
+    font-weight: 100;
+    position: absolute;
+    box-shadow: 0px 15px 0px 0px rgb(243, 244, 244), 0px 30px 0px 0px rgb(246, 248, 248), 0px 45px 0px 0px rgb(252, 255, 255), 0px 60px 0px 0px rgb(243, 245, 245), 20px 15px 0px 0px rgb(243, 244, 244), 20px 30px 0px 0px rgb(246, 248, 248), 20px 45px 0px 0px rgb(252, 255, 255), 20px 60px 0px 0px rgb(243, 245, 245), 20px 0px 0px 0px #f8f4f4, 40px 15px 0px 0px rgb(243, 244, 244), 40px 30px 0px 0px rgb(246, 248, 248), 40px 45px 0px 0px rgb(252, 255, 255), 40px 60px 0px 0px rgb(243, 245, 245), 40px 0px 0px 0px #f8f4f4, 60px 15px 0px 0px rgb(243, 244, 244), 60px 30px 0px 0px rgb(246, 248, 248), 60px 45px 0px 0px rgb(252, 255, 255), 60px 60px 0px 0px rgb(243, 245, 245), 60px 0px 0px 0px #f8f4f4, 80px 15px 0px 0px rgb(243, 244, 244), 80px 30px 0px 0px rgb(246, 248, 248), 80px 45px 0px 0px rgb(252, 255, 255), 80px 60px 0px 0px rgb(243, 245, 245), 80px 0px 0px 0px #f8f4f4;
+}
+
+/*======= about shape*/
+.about-shap {
+    width: 150px;
+    height: 150px;
+    border: 1px solid wheat;
+    position: absolute;
+    right: -6%;
+    top: 2100px;
+}
+
+/*==== ====*/
+.abcd {
+    background: rgb(233, 234, 234);
+    width: 3px;
+    height: 3px;
+    border-radius: 100px;
+    margin-top: -300px;
+    left: -17%;
+    font-weight: 100;
+    position: absolute;
+    box-shadow: 0px 15px 0px 0px rgb(243, 244, 244), 0px 30px 0px 0px rgb(246, 248, 248), 0px 45px 0px 0px rgb(252, 255, 255), 0px 60px 0px 0px rgb(243, 245, 245), 20px 15px 0px 0px rgb(243, 244, 244), 20px 30px 0px 0px rgb(246, 248, 248), 20px 45px 0px 0px rgb(252, 255, 255), 20px 60px 0px 0px rgb(243, 245, 245), 20px 0px 0px 0px #f8f4f4, 40px 15px 0px 0px rgb(243, 244, 244), 40px 30px 0px 0px rgb(246, 248, 248), 40px 45px 0px 0px rgb(252, 255, 255), 40px 60px 0px 0px rgb(243, 245, 245), 40px 0px 0px 0px #f8f4f4, 60px 15px 0px 0px rgb(243, 244, 244), 60px 30px 0px 0px rgb(246, 248, 248), 60px 45px 0px 0px rgb(252, 255, 255), 60px 60px 0px 0px rgb(243, 245, 245), 60px 0px 0px 0px #f8f4f4, 80px 15px 0px 0px rgb(243, 244, 244), 80px 30px 0px 0px rgb(246, 248, 248), 80px 45px 0px 0px rgb(252, 255, 255), 80px 60px 0px 0px rgb(243, 245, 245), 80px 0px 0px 0px #f8f4f4;
+}
